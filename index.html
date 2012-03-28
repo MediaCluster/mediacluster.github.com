@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" lang="de">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>MediaCluster GmbH</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="//www.mediacluster.de/static/style/style.css" media="all" />
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="//www.mediacluster.de/static/style/ie.css" media="all" />
+  <![endif]-->
+  <script type="text/javascript" src="//www.mediacluster.de/static/js/jquery-1.4.2.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="bg">
+    <img alt="" src="" />
+  </div>
+
+  
+  <div id="dbg">
+    <!--debugging info-->
+  </div>
+
+   
+  <a id="home" href="//www.mediacluster.de/"></a>
+  <div id="container" class="">
+    
+    <div id="content" class="clearfix">
+    
+      <div id="nav">
+        <ul id="top">
+          <li class="active"><a href="//www.mediacluster.de/agentur">Agentur</a></li>
+          <li><a href="//www.mediacluster.de/arbeiten">Arbeiten</a></li>
+          <li><a href="//www.mediacluster.de/labor">Labor</a></li>
+
+          <li id="share">
+            <span class="wrap"><a href="//twitter.com/#!/mediacluster" id="tw" target="_blank"><img src="//www.mediacluster.de/static/images/tw_logo.png" alt="Twitter" /><label>Folge uns auf Twitter<span></span></label></a></span>
+            <span class="wrap"><a href="//www.facebook.com/#!/MediaCluster" id="fb" target="_blank"><img src="//www.mediacluster.de/static/images/fb_logo.png" alt="Facebook" /><label>Besuche uns auf Facebook<span></span></label></a></span>
+            <!--<span class="wrap"><a href="//www.flickr.com/groups/mediacluster/" id="fl" target="_blank"><img src="//www.mediacluster.de/static/images/fl_logo.png" alt="Flickr" /><label>Finde uns auf Flickr<span></span></label></a></span>-->
+            <span class="wrap"><a href="//www.youtube.com/mediacluster7" id="yt" target="_blank"><img src="//www.mediacluster.de/static/images/yt_logo.png" alt="YouTube" /><label>Besuche uns auf YouTube<span></span></label></a></span>
+          </li>
+          <li id="mailto">
+
+            <span class="wrap"><a href="//www.mediacluster.de/kontakt"><img src="//www.mediacluster.de/static/images/bg_mail.png" alt="Kontakt" /><label>Nimm Kontakt mit uns auf<span></span></label></a></span>
+          </li>     
+        </ul>
+        <ul id="sub">
+          <li class="divider"></li><li><a href="//www.mediacluster.de/haltung">Haltung</a></li><li class="divider"></li><li><a href="//www.mediacluster.de/denke">Denke</a></li><li class="divider"></li><li><a href="//www.mediacluster.de/kunst">Kunst</a></li><li class="divider"></li><li><a href="//www.mediacluster.de/blog">Blog</a></li><li class="divider"></li><li class="active"><a href="//www.mediacluster.de/jobs">Jobs</a></li>
+        </ul>
+
+      </div>
+
+      <h1 class="bw">We're MediaCluster<span class="offset">Resistance is futile</h1>
+
+    </div><!--content-->  
+  </div><!--container-->  
+
+  <div id="foot">
+    <a href="//www.mediacluster.de/agentur">Agentur</a><a href="//www.mediacluster.de/arbeiten">Arbeiten</a><a href="//www.mediacluster.de/labor">Labor</a><a href="//www.mediacluster.de/kontakt">Kontakt</a><a href="//www.mediacluster.de/impressum">Impressum</a>
+
+    <span class="ext">
+      <a href="//www.terminalsystem.de/" target="_blank">Terminalsystem</a>
+      <a href="//digital-signage-shop.de/" target="_blank">Digital Signage</a>
+      <a href="//www.interactivecity.de/" target="_blank">Interactive City</a>
+    </span>
+  </div>
+
+  <script type="text/javascript" src="//www.mediacluster.de/static/js/mc_tools.min.js"></script>
+
+  <script type="text/javascript" src="//www.mediacluster.de/static/js/cufon-yui.js"></script>
+  <script type="text/javascript" src="//www.mediacluster.de/static/js/hyphenator_de.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+  $(function() {
+  
+    // bg image handling
+    $('#bg img').css('opacity', 0);  
+  
+    var branch = parseFloat(0+3);
+    if (branch > 1) branch = 1; // override, only home & pool available
+    var images = [ 
+      ['//www.mediacluster.de/media/0000000105.jpg' ],
+      ['//www.mediacluster.de/media/0000000080.jpg' , '//www.mediacluster.de/media/0000000085.jpg', '//www.mediacluster.de/media/0000000064.jpg', '//www.mediacluster.de/media/0000000068.jpg', '//www.mediacluster.de/media/0000000087.jpg', '//www.mediacluster.de/media/0000000025.jpg', '//www.mediacluster.de/media/0000000082.jpg', '//www.mediacluster.de/media/0000000080.jpg', '//www.mediacluster.de/media/0000000060.jpg', '//www.mediacluster.de/media/0000000062.jpg', '//www.mediacluster.de/media/0000000089.jpg', '//www.mediacluster.de/media/0000000100.jpg', '//www.mediacluster.de/media/0000000065.jpg', '//www.mediacluster.de/media/0000000071.jpg', '//www.mediacluster.de/media/0000000084.jpg', '//www.mediacluster.de/media/0000000086.jpg', '//www.mediacluster.de/media/0000000083.jpg', '//www.mediacluster.de/media/0000000063.jpg']  
+    ]; // images[]
+    var numpics = images[branch].length, random = Math.round( Math.random() * (numpics-1)), picsrc =  images[branch][random];    
+    var override = false;
+    var fixsrc = '' + '//www.mediacluster.de/media/0000000105.jpg';
+    if (override == true) picsrc = fixsrc;  
+    $('#bg img').attr('src', picsrc).animate({'opacity' : 1},300);
+  });
+  //]]>
+  </script>
+
+  <script type="text/javascript" src="//www.mediacluster.de/static/js/functions.js"></script>
+  <script type="text/javascript">Cufon.now();</script>
+
+</body>
+</html>
